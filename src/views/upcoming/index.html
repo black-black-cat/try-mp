@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="bkhMSWNDa2oWLC9xEnYKR1Z6YQsREj8FWAs.KzotHF82ACcnEBA9DQ==">
+    <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta content="telephone=no" name="format-detection"/>
+</head>
+<body >
+
+
+<div id="app"></div>
+<script src="/dist/common/index.js"></script>
+<script>
+
+    const options = {
+        bannerImage:[{"biz_admin_id":"","id":"2432","img":"http:\/\/172.16.10.130\/eshop\/adminapi\/web\/upload\/base\/2017\/09\/29\/59cdf27d8a50b\/o.png","params":"","status":1,"title":"\u5373\u5c06\u4e0a\u6620\u767d\u8fb9","type":"","url":""}] ,
+        href: {
+            apiFilms: '/proxy/qu/dyh5/web/film/films?b=dy&ch=0009&a=110100&ci=66778833',//ajax获取影片信息
+            urlFilm: '/dyh5/web/film/view?b=dy&ch=0009&a=110100&ci=66778833', //影片详情
+            urlHot: '/dyh5/web/index/index?b=dy&ch=0009&a=110100&ci=66778833', //正在热映
+            urlActview:'/dyh5/web/discovery/actview?b=dy&ch=0009&a=110100&ci=66778833' //活动详情
+        },
+        bottomNavItems: [
+            '/dyh5/web/index/index?b=dy&ch=0009&a=110100&ci=66778833', //首页(正在热映)
+            '/dyh5/web/discovery/list?b=dy&ch=0009&a=110100&ci=66778833', //发现（影讯信息）
+            '/dyh5/web/snack/list?b=dy&ch=0009&a=110100&ci=66778833',  //商城
+            '/dyh5/web/my/index?b=dy&ch=0009&a=110100&ci=66778833',    //我的
+        ]
+    };
+</script>
+<script src="/dist/upcoming/index.js?ea66357593c116ca6334"></script>
+</body>
+</html>

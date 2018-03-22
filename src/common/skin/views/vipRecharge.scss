@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.m-views-viprecharge {
+    .tips {
+        color: #f99700;
+        background: #f9f1c3;
+    }
+    
+    .member-card {
+        .section-3 {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+.m-viprecharge-content {
+    .layout-2 {
+        background: $c1;
+        .title {
+            color: $c6;
+        }
+    }
+    .money {
+        >div {
+            color: $c5;
+            @include solid(2px, $c13);
+        }
+        .active {
+            @include solid(2px, $c7);
+            color: $c7;
+        }
+    }
+    .layout-3 {
+        background: $c1;
+        >div {
+            &:first-child {
+                @include solid(2px, $c2, bottom);
+            }
+        }
+        .name {
+            color: $c6;
+        }
+    }
+}
+.m-viprecharge-foot{
+    background: $c1;
+    span {
+        color: $c8;
+    }
+    .open {
+        color: $c1;
+        background-color: $c7;
+        box-shadow: 2px 2px 10px rgba($c7, 0.5);
+    }
+
+}
+.m-viprecharge-type {
+    background: $c1;
+    >div {
+        border: 1px solid $c2;
+    }
+    .check {
+        @include solid(2px, $c13);
+    }
+    .active {
+        background: $c7;
+    }
+}

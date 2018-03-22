@@ -1,0 +1,601 @@
+@charset "UTF-8";
+
+/*******
+默认样式
+ */
+
+@import "./views/movie";
+@import "./views/index";
+@import "./views/index_2";
+@import "./views/index_3";
+@import "./views/cinemas";
+@import "./views/upcoming";
+@import "./views/seats";
+@import "./views/orderDetail";
+@import "./views/goodDetail";
+@import "./views/personal";
+@import "./views/schedule";
+@import "./views/order";
+@import "./views/myOrder";
+@import "./views/meal";
+@import "./views/result";
+@import "./views/myReviews";
+@import "./views/openMemberCard";
+@import "./views/bindMemberCard";
+@import "./views/openVip";
+@import "./views/find";
+@import "./views/inquire";
+@import "./views/infoDetail";
+@import "./views/vipRecharge";
+@import "./views/coupon";
+@import "./views/findPassword";
+@import "./views/login";
+@import "./views/editPassword";
+@import "/views/settings";
+@import "/views/aboutUs";
+@import "/views/changeMobile";
+
+//自定义弹出框颜色值
+.m-mobile-dialog {
+    background: $c1;
+    box-shadow: 0 0 10px rgba($c7, .4);
+    .dialog-msg {
+        color: $c6;
+    }
+    .dialog-wait {
+        background-color: rgba($c0, 0.5);
+        i {
+            background-color: $c1;
+        }
+    }
+    .dialog-content {
+        color: $c6;
+    }
+    .dialog-items {
+        .q-btn {
+            color: $c7;
+            @include solid(2px, $c7);
+        }
+        .q-ok {
+            color: $c1;
+            background-color: $c7;
+            box-shadow: 2px 2px 8px rgba($c7, 0.3);
+            &:active {
+                background-color: rgba($c7, 0.7);
+            }
+        }
+    }
+}
+
+//滚动加载
+.m-scroll-loading {
+    .ani-loading {
+        .ani-1,
+        .ani-2,
+        .ani-3 {
+            background-color: $c7;
+        }
+    }
+    .text {
+        color: $c7;
+    }
+}
+
+//底部导航
+.m-nav-items {
+    background-color: rgba($c1, 0.95);
+    box-shadow: 0 0 10px rgba($c0, .08);
+    .nav-item {
+        &:active {
+            background-color: rgba($c0, 0.05);
+        }
+        .name {
+            color: $c4;
+            &.selected {
+                color: $c7;
+            }
+        }
+    }
+}
+
+//绑定手机号
+.m-bind-mobile {
+    background-color: $c1;
+    .title {
+        @include box-shadow(0 0 10px rgba($c4, 0.1));
+        .name {
+            color: $c6;
+        }
+    }
+    .form-items {
+        .item {
+            @include solid(2px, $c10, bottom);
+            input {
+                color: $c6;
+            }
+            .code {
+                color: $c7;
+                @include solid(2px, $c10, left);
+                &.gray {
+                    color: $c4;
+                }
+            }
+        }
+    }
+    .btn {
+        color: $c1;
+        background-color: $c7;
+        box-shadow: 2px 2px 8px rgba($c7, 0.3);
+        &:active {
+            background-color: rgba($c7, 0.7);
+        }
+    }
+}
+
+// 会员卡卡片
+@mixin member-card-bg($color: $c7) {
+    background-color: $color;
+    box-shadow: 0 0 0.3rem 0.1rem rgba($color, 0.2);
+}
+
+.m-member-card-container {
+    &.member-card-1 {
+        color: $c-card-1;
+        .m-card-message .text-styled {
+            color: $c-card-1;
+        }
+    }
+    &.member-card-2 {
+        color: $c-card-2;
+        .m-card-message .text-styled {
+            color: $c-card-2;
+        }
+    }
+    &.member-card-3 {
+        color: $c-card-3;
+        .m-card-message .text-styled {
+            color: $c-card-3;
+        }
+    }
+    &.member-card-4 {
+        color: $c-card-4;
+        .m-card-message .text-styled {
+            color: $c-card-4;
+        }
+    }
+    &.member-card-5 {
+        color: $c-card-5;
+        .m-card-message .text-styled {
+            color: $c-card-5;
+        }
+    }
+}
+
+.m-member-card {
+    color: $c1;
+    &.member-card-1 {
+        @include member-card-bg($c-card-1);
+    }
+    &.member-card-2 {
+        @include member-card-bg($c-card-2);
+    }
+    &.member-card-3 {
+        @include member-card-bg($c-card-3);
+    }
+    &.member-card-4 {
+        @include member-card-bg($c-card-4);
+    }
+    &.member-card-5 {
+        @include member-card-bg($c-card-5);
+    }
+    .circle-1,
+    .circle-2,
+    .circle-3 {
+        box-shadow: 0 0.1rem 0.5rem 0rem rgba($c0, 0.1);
+    }
+    .circle-1 {
+        background-image: linear-gradient(0deg, rgba($c0, 0.1), rgba($c0, 0) 20%);
+    }
+    .member-card-desc-1 {
+        opacity: 0.7;
+    }
+}
+
+// 优惠券
+.m-coupon-ticket {
+    color: $c1;
+    &.default {
+        background-image: linear-gradient(135deg, lighten($c-ticket-1, 14%), $c-ticket-1);
+        box-shadow: 0 0 0.3rem 0.1rem rgba($c-ticket-1, 0.2);
+    }
+    &.snack {
+        background-image: linear-gradient(135deg, lighten($c-ticket-2, 14%), $c-ticket-2);
+        box-shadow: 0 0 0.3rem 0.1rem rgba($c-ticket-2, 0.2);
+    }
+    &.common {
+        background-image: linear-gradient(135deg, lighten($c-ticket-3, 14%), $c-ticket-3);
+        box-shadow: 0 0 0.3rem 0.1rem rgba($c-ticket-3, 0.2);
+    }
+    &.disabled {
+        background-image: linear-gradient(135deg, lighten($c3, 14%), $c3);
+        box-shadow: 0 0 0.3rem 0.1rem rgba($c3, 0.2);
+    }
+    .divide {
+        @include dashed(rem(2px), rgba($c1, 0.3), left);
+        .disc {
+            background-color: #e7e7e7;
+        }
+    }
+    .hook {
+        //background-color: $c16;
+        @include gradient-angle(45deg, rgba($c1, 0) 0, rgba($c1, 0) 50%, $c16 51%);
+    }
+}
+
+// 优惠券说明
+.m-views-coupon-instruction {
+    background-color: $c1;
+    .question {
+        color: $c7;
+    }
+}
+
+// 切换影城banner
+.m-cinema-location {
+    background-color: $c1;
+    .display {
+        &-row-1 {
+            color: $c6;
+        }
+        &-row-2 {
+            color: $c4;
+        }
+    }
+    .select {
+        color: $c7;
+        border-color: $c2;
+    }
+}
+
+//选择影院组件
+.m-select-cinema {
+    background-color: $c1;
+    .search-title {
+        @include box-shadow(0 0 10px rgba($c4, 0.1));
+    }
+    .search-input {
+        background-color: $c10;
+        .input {
+            color: $c6;
+        }
+    }
+    .clear-text {
+        background-color: $c3;
+        &:before,
+        &:after {
+            border-bottom-color: $c1;
+        }
+    }
+    .show-nav {
+        background-color: $c2;
+        @include box-shadow(inset 5px 0 10px rgba($c4, 0.05));
+    }
+    %item {
+        .item {
+            @include solid(2px, $c10, bottom);
+            &:active {
+                background-color: $c10;
+            }
+        }
+        .cinema-name {
+            color: $c6;
+            em {
+                color: $c7;
+            }
+        }
+        .location {
+            color: $c4;
+        }
+    }
+    .show-items {
+        @extend %item;
+    }
+    .search-items {
+        @extend %item;
+    }
+    .index-item {
+        color: $c7;
+    }
+    %btn {
+        @include solid(2px, $c10);
+        background-color: $c1;
+        color: $c6;
+        &.selected {
+            border-color: $c7;
+            color: $c7;
+        }
+        &:active {
+            background-color: rgba($c3, 0.3);
+        }
+    }
+    .select-city {
+        .name {
+            color: $c4;
+        }
+        .city-btn {
+            @extend %btn;
+        }
+    }
+    .city-group {
+        .name {
+            color: $c6;
+        }
+        .item-btn {
+            @extend %btn;
+        }
+    }
+}
+//登录弹窗样式
+.m-login-views {
+    background-color: $c1;
+}
+
+// 选择城市
+.m-select-city {
+    background-color: $c10;
+
+    >.list {
+        >.alphabet {
+            li.active {
+                color: $c1;
+                background-color: $c7;
+            }
+        }
+    }
+
+    .clear-text {
+        background-color: $c3;
+        &:before,
+        &:after {
+            border-bottom-color: $c1;
+        }
+    }
+
+    .search-input {
+        background-color: $c1;
+        .input {
+            color: $c6;
+        }
+    }
+
+    .city-result {
+        .label {
+            color: $c4;
+        }
+        .city-name {
+            color: $c7;
+            background-color: $c1;
+        }
+    }
+
+    .cities {
+        .char {
+            color: $c4;
+        }
+        .char-city {
+            background-color: $c1;
+            @include solid(2px, $c2, bottom, false);
+        }
+        .char-cities {
+            background-color: $c1;
+        }
+    }
+
+    .search-result {
+        .char-city {
+            span {
+                color: $c7
+            }
+        }
+    }
+}
+
+
+// 页面网络请求错误的提示
+.m-error {
+    color: $c3;
+    .btn {
+        background-color: transparent;
+        @include solid(2px, $c7);
+        color: $c7;
+    }
+}
+
+// 影讯的媒体对象
+.m-media-object-news {
+    background-color: $c1;
+    border-color: $c10;
+    .row-last {
+        color: $c3;
+        .badge {
+            background-color: $c2;
+            color: $c4;
+        }
+    }
+}
+
+// 返回顶部、返回首页悬浮按钮
+.m-backto {
+    .backto-top,
+    .backto-home {
+        background-color: rgba($c0, .5);
+    }
+}
+
+// 插屏广告
+.m-popup-ad {
+    .close {
+        &:before,
+        &:after {
+            background-color: $c1;
+            border-color: $c1;
+        }
+        &:before {
+            width: 1rem !important;
+        }
+        &:after {
+            height: 1rem !important;
+        }
+    }
+    .close-full {
+        border-color: $c1;
+        background-color: rgba($c0, 0.3);
+        &:before,
+        &:after {
+            background-color: $c1;
+            border-color: $c1;
+        }
+        &:before {
+            width: rem(36) !important;
+        }
+        &:after {
+            height: rem(36) !important;
+        }
+    }
+}
+
+// 相关影讯页面
+.m-views-relative-info {
+    .m-count {
+        background-color: $c1;
+    }
+    .load-more {
+        color: $c5;
+        .arrow-down {
+            &:after {
+                border-top-color: $c1;
+            }
+            &:before {
+                border-top-color: $c5;
+            }
+        }
+    }
+}
+
+// 没有更多加载的提示
+.m-touched-bottom {
+    color: $c3;
+    .line {
+        background-color: $c3;
+    }
+}
+
+// 影院详情popup
+.m-movie-detail {
+    background-color: $c1;
+    .title {
+        color: $c6;
+        @include box-shadow(0 1px 8px rgba($c0, 0.07));
+    }
+    .address {
+        @include solid(2px, $c2, bottom);
+        .name {
+            color: $c6;
+        }
+        .time {
+            color: $c4;
+        }
+        .location {
+            color: $c4;
+        }
+    }
+    .service {
+        .list-title {
+            color: $c5;
+        }
+        .list {
+            .item {
+                .service-name {
+                    .name {
+                        @include solid(2px, $c7);
+                        color: rgba($c7, 0.8);
+                    }
+                }
+                .service-explain {
+                    color: $c5;
+                }
+            }
+        }
+    }
+    .cinemaInfo {
+        .service-name {
+            .name {
+                @include solid(2px, $c7);
+                color: rgba($c7, 0.8);
+            }
+        }
+        .service-explain {
+            color: $c5;
+        }
+    }
+}
+
+/*APP版本更新弹窗*/
+.m-version-update{
+    .m-container{
+        background-color: $c1;
+    }
+    .discription{
+        color:$c4;
+    }
+    .title{
+        color:$c6;
+    }
+    .m-footer{
+        .button{
+            &.ok{
+                color:$c1;
+                background-color: $c7;
+            }
+            &.cancel{
+                color:$c7;
+                @include solid(2px, $c7);
+            }
+        }
+
+    }
+}
+/*注册页面协议弹窗样式*/
+.m-register-policy{
+    .container{
+        background-color: $c1;
+        color:$c5;
+        .title{
+            color:$c6;
+        }
+    }
+
+}
+
+// 开卡、绑卡有奖提示
+.m-card-message {
+    .text {
+        color: $c7;
+        .arrow-right {
+            &:before,
+            &:after {
+                border-left-color: $c7;
+            }
+            &:after {
+                border-left-color: $c10;
+            }
+        }
+    }
+    .text-styled {
+        background-color: $c9;
+    }
+    .text-top {
+        color: #f99700;
+        background-color: #f9f1c3;
+    }
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "../../style/skin_2/variable";
+@import "../../style/skin_2/sprites";
+@import "../../style/skin_2/theme";
+@import "../../style/common";
+@import "../theme";
+
+html,body{
+  background-color: $c2;
+}

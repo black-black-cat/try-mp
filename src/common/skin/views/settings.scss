@@ -1,0 +1,43 @@
+@charset 'utf-8';
+html,
+body {
+    //background: $c1 !important;
+}
+
+.m-settings-views {
+    color:$c5;    
+}
+
+.m-settings-content {
+    .layout-1{
+        background-color: $c1;
+        .item{
+            @include solid(2px, $c10, bottom);
+            &:last-child{
+                border:none;
+            }            
+            .text{
+                color:$c3;
+            }
+            .text_tel{
+                color: $c6;
+            }
+            .arrow-right {
+                &:before {
+                    border-left-color: $c3;
+                }
+                &:after {
+                    border-left-color: $c1;
+                }
+            }
+        }
+    }
+}
+
+.m-settings-foot{
+    .button{
+        background-color: $c1;
+        color: $c7;
+        box-shadow: 2px 2px 10px rgba($c4, 0.5);
+    }
+}

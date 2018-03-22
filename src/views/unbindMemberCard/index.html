@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="bkhMSWNDa2oWLC9xEnYKR1Z6YQsREj8FWAs.KzotHF82ACcnEBA9DQ==">
+    <title>绑定会员卡</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta content="telephone=no" name="format-detection"/>
+</head>
+<body >
+
+<div id="app"></div>
+<script>
+     const options = {
+        data: {
+            mobile:'18675521030',
+            bindMobile:'1',
+            cinema:{"access_type":"\u706b\u70c8\u9e1f","cinema_address":"\u5317\u4eac\u5e02\u4e1c\u57ce\u533a","cinema_code":"66778833","cinema_id":"45252293-1ca9-4a37-8b61-0e2dff57674d","cinema_name":"\u6d4b\u8bd5\u5f71\u966266778833","city_code":"110100","feature":"","feature_service":[],"grade":"8.0","perfectsurr":[],"tel":"56451321321"},
+        },
+        href: {
+            apiSendsms: '/dyh5/web/user/sendsmscodecard',//发送短信验证码
+            apiBindcard: '/dyh5/web/mcard/bind',// 绑定会员卡
+            urlMyindex: '/dyh5/web/my/index',// 我的页面
+        },
+    };
+
+    console.dir(options)
+</script>
+<script src="/dist/bindMemberCard/index.js"></script>
+<script src="/js/bindMemberCard.js"></script>
+</body>
+</html>

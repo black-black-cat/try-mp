@@ -1,0 +1,81 @@
+@charset 'utf-8';
+.m-views-myorder {
+    .tabs {
+        background: $c1;
+        >div {
+            color: $c4;
+        }
+        .active {
+            color: $c7;
+        }
+        .line {
+            div {
+                background: $c7;
+            }
+        }
+    }
+    .more {
+        color: $c3;
+    }
+}
+
+.m-views-myorder .list {
+    >.item {
+        background: $c1;
+        box-shadow: 0 0 10px rgba(153, 153, 153, 0.1);
+    }
+    .title {
+        color: $c4;
+        box-shadow: 0 0 10px rgba(153, 153, 153, 0.1);
+        .status {
+            color: $c7;
+        }
+        .due {
+            color: $c5;
+        }
+        .error {
+            color: $c16;
+        }
+    }
+    .info {
+        div:nth-child(1) {
+            color: $c5;
+            span {
+                color: $c6;
+            }
+        }
+        div:nth-child(n+2) {
+            color: $c5;
+        }
+    }
+    .pay {
+        @include solid(2px $c2, top);
+        div:first-child {
+            color: $c5;
+            span {
+                color: $c8;
+            }
+        }
+        .cancel,
+        .signal,
+        .double>div {
+            color: $c7;
+            @include solid(2px $c7, all);
+        }
+        .double {
+            div:nth-child(2) {
+                color: $c1;
+                background: $c7;
+            }
+        }
+        .draw {
+            color: $c7;
+        }
+    }
+    .blank {
+        //background: $c2;
+        >div:last-child {
+            color: $c4;
+        }
+    }
+}

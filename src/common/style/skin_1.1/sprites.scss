@@ -1,0 +1,599 @@
+//随机数字
+@function parse-random($value) {
+  @return round(random() * $value);
+}
+$randomId: parse-random(1000000);
+
+$spriteSrc:'../../../../images/sprites/skin_1.1/sprite.png?v=#{$randomId}';
+
+$spriteWidth: 644px;
+$spriteHeight: 591px;
+$aboutUs-logo: 0px 0px 180px 180px;
+$acti-eye: -188px -154px 40px 24px;
+$acti-thumb: -218px -500px 34px 35px;
+$backto-home: -291px -236px 36px 32px;
+$backto-top: -405px -303px 32px 36px;
+$balance: -445px -72px 49px 56px;
+$bd: -565px -108px 45px 45px;
+$bg-card: -280px -376px 46px 36px;
+$call-out: -58px -500px 50px 42px;
+$card-refresh: -618px -206px 22px 22px;
+$cinema: -618px -140px 26px 24px;
+$clock: -618px -323px 20px 20px;
+$close_1: -186px -551px 31px 31px;
+$close: -468px -441px 33px 34px;
+$comment: 0px -500px 50px 43px;
+$coupon-arrow: -618px -34px 26px 26px;
+$coupon: -116px -500px 50px 42px;
+$detail: -509px -56px 42px 54px;
+$dialog-close: -338px -441px 38px 37px;
+$dislike-selected: -509px -118px 46px 46px;
+$dislike: -509px -280px 46px 46px;
+$double-sided-arrow: -618px -351px 20px 20px;
+$download: -618px -172px 21px 26px;
+$edit: -509px 0px 48px 48px;
+$egg: -618px -68px 24px 28px;
+$eye: -236px -154px 38px 23px;
+$feedback: -184px -441px 50px 40px;
+$filtrate: -260px -500px 33px 34px;
+$find-selected: -66px -303px 61px 61px;
+$find: -70px -376px 57px 56px;
+$footer-good: -445px -136px 51px 51px;
+$footer-review: 0px -441px 50px 51px;
+$footer-share: -445px -259px 50px 51px;
+$gift: -445px 0px 56px 64px;
+$gwr: -565px -54px 45px 46px;
+$hand-dislike: -384px -441px 34px 36px;
+$hand-like: -426px -441px 34px 36px;
+$home-selected: -342px -195px 63px 61px;
+$home: -340px -303px 57px 56px;
+$hook: -618px -268px 26px 18px;
+$hook1: -428px -376px 33px 33px;
+$hook2: -375px -551px 32px 24px;
+$key: -291px -188px 40px 40px;
+$light: -301px -500px 32px 34px;
+$like-selected: -509px -226px 46px 46px;
+$like: -509px -172px 46px 46px;
+$location-1: -75px -551px 30px 36px;
+$location-2: -150px -551px 28px 35px;
+$location: -618px -236px 20px 24px;
+$login_logo: -188px 0px 146px 146px;
+$lost: -342px 0px 95px 46px;
+$me-selected: -135px -303px 59px 61px;
+$me: -135px -376px 57px 56px;
+$member-card-tag: -200px -376px 72px 36px;
+$mobile: -113px -551px 29px 36px;
+$more: -282px -154px 30px 6px;
+$msg: -423px -500px 32px 30px;
+$my: -565px -161px 45px 45px;
+$night: -618px -294px 21px 21px;
+$open-vip: 0px -303px 58px 65px;
+$order: -174px -500px 36px 39px;
+$pay-fail: -116px -188px 80px 80px;
+$pay-success: -204px -188px 79px 80px;
+$pay: -565px -505px 42px 37px;
+$pen: -565px -266px 42px 42px;
+$phone: -342px -125px 62px 62px;
+$place: -618px -379px 18px 22px;
+$play-white: -618px -409px 17px 20px;
+$play: 0px -551px 28px 40px;
+$pwd: -36px -551px 31px 36px;
+$qq: -509px -386px 45px 46px;
+$qr-code: -445px -318px 50px 50px;
+$question: -509px -440px 45px 46px;
+$recharge: -120px -441px 56px 41px;
+$reload: -618px -104px 24px 28px;
+$search: -469px -376px 31px 31px;
+$seat-empty: -565px -316px 42px 39px;
+$seat-mark-1: -463px -500px 32px 30px;
+$seat-mark-2: -383px -500px 32px 30px;
+$seat-mark-3: -503px -500px 32px 30px;
+$seat-mark-4: -342px -264px 72px 30px;
+$seat-mark-5: -341px -500px 34px 30px;
+$seat-my: -565px -410px 42px 39px;
+$seat-other: -565px -363px 42px 39px;
+$setting: -334px -376px 38px 36px;
+$shop: 0px -376px 62px 57px;
+$stage-photo: -339px -551px 28px 28px;
+$star-empty: -565px -457px 40px 40px;
+$star-full: -290px -441px 40px 40px;
+$star-half: -242px -441px 40px 40px;
+$star: -342px -54px 65px 63px;
+$store-selected: -202px -303px 64px 56px;
+$store: -274px -303px 58px 56px;
+$sun: -618px 0px 26px 26px;
+$tb: -565px 0px 45px 46px;
+$thumb-active-1: -301px -551px 30px 30px;
+$thumb-active: -263px -551px 30px 30px;
+$thumb: -225px -551px 30px 30px;
+$unlock: -445px -195px 46px 56px;
+$use: -380px -376px 40px 33px;
+$used: -565px -214px 42px 44px;
+$vip: -58px -441px 54px 44px;
+$wechat: 0px -188px 108px 107px;
+$wx: -509px -334px 48px 44px;
+
+@function px2rem ($px) {
+  @if (type-of($px) == "number") {
+    @return $px / 75px * 1rem;
+  }
+  @if (type-of($px) == "list") {
+    @if (nth($px, 1) == 0 and nth($px, 2) != 0) {
+      @return 0 nth($px, 2) / 75px * 1rem;
+    } @else if (nth($px, 1) == 0 and nth($px, 2) == 0)  {
+      @return 0 0;
+    } @else if (nth($px, 1) != 0 and nth($px, 2) == 0) {
+      @return nth($px, 1) / 75px * 1rem 0;
+    } @else {
+      @return nth($px, 1) / 75px *1rem nth($px, 2) / 75px * 1rem;
+    }
+  }
+}
+
+@function strip-units($number){
+  @return $number / ($number * 0 + 1);
+}
+
+@function format-zero($number){
+	@if $number == 0 {
+		@return 1;
+	}@else{
+		@return $number;
+	}
+}
+
+@mixin sprite-width($sprite, $precision) {
+	@if $precision {
+		width: px2rem(nth($sprite, 3));
+	}@else{
+		width: px2rem(nth($sprite, 3) + 2px);
+	}
+	
+}
+
+@mixin sprite-height($sprite, $precision) {
+	@if $precision {
+		height: px2rem(nth($sprite, 4));
+	}@else{
+		height: px2rem(nth($sprite, 4) + 2px);
+	}
+}
+
+@mixin sprite-position($sprite, $precision) {
+	@if $precision {
+		background-position: strip-units(nth($sprite, 1)) / strip-units(nth($sprite, 3) - $spriteWidth) * 100%  strip-units(nth($sprite, 2)) / format-zero(strip-units(nth($sprite, 4) - $spriteHeight)) * 100%;
+	}@else{
+		background-position: strip-units(nth($sprite, 1)) / strip-units(nth($sprite, 3) + 1 - $spriteWidth) * 100%  strip-units(nth($sprite, 2)) / format-zero(strip-units(nth($sprite, 4) + 1 - $spriteHeight)) * 100%;
+	}
+}
+
+@mixin sprite($sprite, $precision) {
+	@include sprite-position($sprite, $precision);
+	@include sprite-width($sprite, $precision);
+	@include sprite-height($sprite, $precision);
+}
+
+%common-sprite{
+	background-image: url('#{$spriteSrc}');
+	background-repeat: no-repeat;
+	background-size: px2rem(($spriteWidth, $spriteHeight));
+    display: inline-block;
+}
+
+
+.icon-aboutUs-logo {
+	@extend %common-sprite;
+    @include sprite($aboutUs-logo, false);
+}
+.icon-acti-eye {
+	@extend %common-sprite;
+    @include sprite($acti-eye, false);
+}
+.icon-acti-thumb {
+	@extend %common-sprite;
+    @include sprite($acti-thumb, false);
+}
+.icon-backto-home {
+	@extend %common-sprite;
+    @include sprite($backto-home, false);
+}
+.icon-backto-top {
+	@extend %common-sprite;
+    @include sprite($backto-top, false);
+}
+.icon-balance {
+	@extend %common-sprite;
+    @include sprite($balance, false);
+}
+.icon-bd {
+	@extend %common-sprite;
+    @include sprite($bd, false);
+}
+.icon-bg-card {
+	@extend %common-sprite;
+    @include sprite($bg-card, false);
+}
+.icon-call-out {
+	@extend %common-sprite;
+    @include sprite($call-out, false);
+}
+.icon-card-refresh {
+	@extend %common-sprite;
+    @include sprite($card-refresh, false);
+}
+.icon-cinema {
+	@extend %common-sprite;
+    @include sprite($cinema, false);
+}
+.icon-clock {
+	@extend %common-sprite;
+    @include sprite($clock, false);
+}
+.icon-close_1 {
+	@extend %common-sprite;
+    @include sprite($close_1, false);
+}
+.icon-close {
+	@extend %common-sprite;
+    @include sprite($close, false);
+}
+.icon-comment {
+	@extend %common-sprite;
+    @include sprite($comment, false);
+}
+.icon-coupon-arrow {
+	@extend %common-sprite;
+    @include sprite($coupon-arrow, false);
+}
+.icon-coupon {
+	@extend %common-sprite;
+    @include sprite($coupon, false);
+}
+.icon-detail {
+	@extend %common-sprite;
+    @include sprite($detail, false);
+}
+.icon-dialog-close {
+	@extend %common-sprite;
+    @include sprite($dialog-close, false);
+}
+.icon-dislike-selected {
+	@extend %common-sprite;
+    @include sprite($dislike-selected, false);
+}
+.icon-dislike {
+	@extend %common-sprite;
+    @include sprite($dislike, false);
+}
+.icon-double-sided-arrow {
+	@extend %common-sprite;
+    @include sprite($double-sided-arrow, false);
+}
+.icon-download {
+	@extend %common-sprite;
+    @include sprite($download, false);
+}
+.icon-edit {
+	@extend %common-sprite;
+    @include sprite($edit, false);
+}
+.icon-egg {
+	@extend %common-sprite;
+    @include sprite($egg, false);
+}
+.icon-eye {
+	@extend %common-sprite;
+    @include sprite($eye, false);
+}
+.icon-feedback {
+	@extend %common-sprite;
+    @include sprite($feedback, false);
+}
+.icon-filtrate {
+	@extend %common-sprite;
+    @include sprite($filtrate, false);
+}
+.icon-find-selected {
+	@extend %common-sprite;
+    @include sprite($find-selected, false);
+}
+.icon-find {
+	@extend %common-sprite;
+    @include sprite($find, false);
+}
+.icon-footer-good {
+	@extend %common-sprite;
+    @include sprite($footer-good, false);
+}
+.icon-footer-review {
+	@extend %common-sprite;
+    @include sprite($footer-review, false);
+}
+.icon-footer-share {
+	@extend %common-sprite;
+    @include sprite($footer-share, false);
+}
+.icon-gift {
+	@extend %common-sprite;
+    @include sprite($gift, false);
+}
+.icon-gwr {
+	@extend %common-sprite;
+    @include sprite($gwr, false);
+}
+.icon-hand-dislike {
+	@extend %common-sprite;
+    @include sprite($hand-dislike, false);
+}
+.icon-hand-like {
+	@extend %common-sprite;
+    @include sprite($hand-like, false);
+}
+.icon-home-selected {
+	@extend %common-sprite;
+    @include sprite($home-selected, false);
+}
+.icon-home {
+	@extend %common-sprite;
+    @include sprite($home, false);
+}
+.icon-hook {
+	@extend %common-sprite;
+    @include sprite($hook, false);
+}
+.icon-hook1 {
+	@extend %common-sprite;
+    @include sprite($hook1, false);
+}
+.icon-hook2 {
+	@extend %common-sprite;
+    @include sprite($hook2, false);
+}
+.icon-key {
+	@extend %common-sprite;
+    @include sprite($key, false);
+}
+.icon-light {
+	@extend %common-sprite;
+    @include sprite($light, false);
+}
+.icon-like-selected {
+	@extend %common-sprite;
+    @include sprite($like-selected, false);
+}
+.icon-like {
+	@extend %common-sprite;
+    @include sprite($like, false);
+}
+.icon-location-1 {
+	@extend %common-sprite;
+    @include sprite($location-1, false);
+}
+.icon-location-2 {
+	@extend %common-sprite;
+    @include sprite($location-2, false);
+}
+.icon-location {
+	@extend %common-sprite;
+    @include sprite($location, false);
+}
+.icon-login_logo {
+	@extend %common-sprite;
+    @include sprite($login_logo, false);
+}
+.icon-lost {
+	@extend %common-sprite;
+    @include sprite($lost, false);
+}
+.icon-me-selected {
+	@extend %common-sprite;
+    @include sprite($me-selected, false);
+}
+.icon-me {
+	@extend %common-sprite;
+    @include sprite($me, false);
+}
+.icon-member-card-tag {
+	@extend %common-sprite;
+    @include sprite($member-card-tag, false);
+}
+.icon-mobile {
+	@extend %common-sprite;
+    @include sprite($mobile, false);
+}
+.icon-more {
+	@extend %common-sprite;
+    @include sprite($more, false);
+}
+.icon-msg {
+	@extend %common-sprite;
+    @include sprite($msg, false);
+}
+.icon-my {
+	@extend %common-sprite;
+    @include sprite($my, false);
+}
+.icon-night {
+	@extend %common-sprite;
+    @include sprite($night, false);
+}
+.icon-open-vip {
+	@extend %common-sprite;
+    @include sprite($open-vip, false);
+}
+.icon-order {
+	@extend %common-sprite;
+    @include sprite($order, false);
+}
+.icon-pay-fail {
+	@extend %common-sprite;
+    @include sprite($pay-fail, false);
+}
+.icon-pay-success {
+	@extend %common-sprite;
+    @include sprite($pay-success, false);
+}
+.icon-pay {
+	@extend %common-sprite;
+    @include sprite($pay, false);
+}
+.icon-pen {
+	@extend %common-sprite;
+    @include sprite($pen, false);
+}
+.icon-phone {
+	@extend %common-sprite;
+    @include sprite($phone, false);
+}
+.icon-place {
+	@extend %common-sprite;
+    @include sprite($place, false);
+}
+.icon-play-white {
+	@extend %common-sprite;
+    @include sprite($play-white, false);
+}
+.icon-play {
+	@extend %common-sprite;
+    @include sprite($play, false);
+}
+.icon-pwd {
+	@extend %common-sprite;
+    @include sprite($pwd, false);
+}
+.icon-qq {
+	@extend %common-sprite;
+    @include sprite($qq, false);
+}
+.icon-qr-code {
+	@extend %common-sprite;
+    @include sprite($qr-code, false);
+}
+.icon-question {
+	@extend %common-sprite;
+    @include sprite($question, false);
+}
+.icon-recharge {
+	@extend %common-sprite;
+    @include sprite($recharge, false);
+}
+.icon-reload {
+	@extend %common-sprite;
+    @include sprite($reload, false);
+}
+.icon-search {
+	@extend %common-sprite;
+    @include sprite($search, false);
+}
+.icon-seat-empty {
+	@extend %common-sprite;
+    @include sprite($seat-empty, false);
+}
+.icon-seat-mark-1 {
+	@extend %common-sprite;
+    @include sprite($seat-mark-1, false);
+}
+.icon-seat-mark-2 {
+	@extend %common-sprite;
+    @include sprite($seat-mark-2, false);
+}
+.icon-seat-mark-3 {
+	@extend %common-sprite;
+    @include sprite($seat-mark-3, false);
+}
+.icon-seat-mark-4 {
+	@extend %common-sprite;
+    @include sprite($seat-mark-4, false);
+}
+.icon-seat-mark-5 {
+	@extend %common-sprite;
+    @include sprite($seat-mark-5, false);
+}
+.icon-seat-my {
+	@extend %common-sprite;
+    @include sprite($seat-my, false);
+}
+.icon-seat-other {
+	@extend %common-sprite;
+    @include sprite($seat-other, false);
+}
+.icon-setting {
+	@extend %common-sprite;
+    @include sprite($setting, false);
+}
+.icon-shop {
+	@extend %common-sprite;
+    @include sprite($shop, false);
+}
+.icon-stage-photo {
+	@extend %common-sprite;
+    @include sprite($stage-photo, false);
+}
+.icon-star-empty {
+	@extend %common-sprite;
+    @include sprite($star-empty, false);
+}
+.icon-star-full {
+	@extend %common-sprite;
+    @include sprite($star-full, false);
+}
+.icon-star-half {
+	@extend %common-sprite;
+    @include sprite($star-half, false);
+}
+.icon-star {
+	@extend %common-sprite;
+    @include sprite($star, false);
+}
+.icon-store-selected {
+	@extend %common-sprite;
+    @include sprite($store-selected, false);
+}
+.icon-store {
+	@extend %common-sprite;
+    @include sprite($store, false);
+}
+.icon-sun {
+	@extend %common-sprite;
+    @include sprite($sun, false);
+}
+.icon-tb {
+	@extend %common-sprite;
+    @include sprite($tb, false);
+}
+.icon-thumb-active-1 {
+	@extend %common-sprite;
+    @include sprite($thumb-active-1, false);
+}
+.icon-thumb-active {
+	@extend %common-sprite;
+    @include sprite($thumb-active, false);
+}
+.icon-thumb {
+	@extend %common-sprite;
+    @include sprite($thumb, false);
+}
+.icon-unlock {
+	@extend %common-sprite;
+    @include sprite($unlock, false);
+}
+.icon-use {
+	@extend %common-sprite;
+    @include sprite($use, false);
+}
+.icon-used {
+	@extend %common-sprite;
+    @include sprite($used, false);
+}
+.icon-vip {
+	@extend %common-sprite;
+    @include sprite($vip, false);
+}
+.icon-wechat {
+	@extend %common-sprite;
+    @include sprite($wechat, false);
+}
+.icon-wx {
+	@extend %common-sprite;
+    @include sprite($wx, false);
+}

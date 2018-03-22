@@ -1,0 +1,66 @@
+@charset 'utf-8';
+html,
+body {
+    //background: $c1 !important;
+}
+
+.m-login-views {
+    .header {
+        color: $c1;
+        .arrow-right {
+            &:before {
+                border-left-color: $c1;
+            }
+            &:after {
+                border-left-color: $c7;
+            }
+        }
+    }
+    .check {
+        @include solid(2px $c7, all);
+    }
+    .condtion{
+        color: $c7;
+    }
+}
+
+.m-login-content {
+    .flex {
+        @include solid(2px, $c3, bottom);
+        .getCode {
+            color: $c7;
+            @include solid(2px, $c3, left);
+            &.gray {
+                color: $c4;
+            }
+        }
+    }
+    input {
+        color: $c0;
+    }
+     ::-webkit-input-placeholder {
+        color: $c4;
+    }
+    .tips {
+        color: $c7;
+    }
+    .button,
+    .register {
+        background-color: $c7;
+        color: $c1;
+        box-shadow: 2px 2px 10px rgba($c7, 0.5);
+    }
+    .msg {
+        color: $c6;        
+    }
+}
+
+.m-login-wx {
+    .ways {
+        >div:nth-child(1),
+        >div:nth-child(3) {
+            background: $c3;
+        }
+        color: $c4;
+    }
+}

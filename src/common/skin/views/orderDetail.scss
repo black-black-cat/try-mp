@@ -1,0 +1,100 @@
+@charset "UTF-8";
+//订单详情颜色值
+.m-views-orderDetail {
+    .m-content {
+        &.finish {
+            .status {
+                color: $c4;
+            }
+            .ticket-code {
+                color: $c4;
+                .code {
+                    color: $c4;
+                }
+            }
+        }
+    }
+    .order-status {
+        background-color: $c1;
+        @include solid(2px, $c10, bottom);
+        .name {
+            color: $c5;
+        }
+        .status {
+            color: $c7;
+        }
+        .error {
+            color: $c16;
+        }
+    }
+    .order-detail {
+        background-color: $c1;
+        .title {
+            .name {
+                color: $c6;
+            }
+            .lang {
+                color: $c4;
+            }
+        }
+        .video-hall {
+            color: $c5;
+        }
+        .film-date {
+            color: $c6;
+        }
+    }
+    .goods {
+        @include dashed(rem(1px), $c10, top);
+        .good-code {
+            color: $c5;
+            .code {
+                color: $c6;
+            }
+        }
+        .combo-item {
+            color: $c5;
+        }
+        .more {
+            color: $c3;
+            .arrow-down {
+                &:before,
+                &:after {
+                    border-top-color: $c3;
+                }
+                &:after {
+                    border-top-color: $c1;
+                }
+            }
+        }
+    }
+    .split-line {
+        @include dashed(1px, $c10, bottom);
+        &:before,
+        &:after {
+            background-color: $c2;
+        }
+    }
+    .take-ticket {
+        .tel {
+            color: $c7;
+            @include solid(2px, $c7, all);
+        }
+    }
+    .ticket-code {
+        color: $c5;
+        .code {
+            color: $c7;
+
+            &.disabled {
+                color: $c4;
+            }
+        }
+    }
+    .qr-code {
+        @include solid(2px, $c10);
+    }
+    .ticket-items {
+        color: $c4;
+    }
+}

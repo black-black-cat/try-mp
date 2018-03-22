@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="bkhMSWNDa2oWLC9xEnYKR1Z6YQsREj8FWAs.KzotHF82ACcnEBA9DQ==">
+    <title>订单详情</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="/dist/core.dll.js"></script>
+    <script src="/dist/common/1/index.js"></script>
+</head>
+
+<body>
+
+
+    <div id="app"></div>
+    <script>
+        const order_status_map = {
+            "1": "未支付"
+        }
+        let order_status = "1"
+        const options = {
+            data: {
+
+                "film_name": "蜘蛛侠：英雄归来",
+                "show_type_name": "3D",
+                "cinema_name": "NG720（6677..）",
+                "hall_name": "同步影厅2",
+                "show_time": "2017.11.03 周五 19:10-20:50",
+                "print_no": "311829",
+                "verify_no": "678181",
+
+                "order_status": order_status,
+                "order_status_name": order_status_map[order_status],
+                "order_code": "501711031100000183",
+                "pay_amount": 113.2,
+                "cinemaOrderCode": "1711031626413056",
+
+                "ticket_status": "3",
+                "ticket_status_name": "出票失败",
+                "seats": ["4排8座"],
+                "snacks": ["可乐套装*1"],
+                "client_tel": "15361050954",
+            }
+        }
+
+        // const options = {
+        //     data: {
+        //         "cinema_name": "NG720（6677..）",
+        //         "order_status": "4",
+        //         "order_status_name": "支付成功",
+        //         "snack_status": "4",
+        //         "snack_status_name": "支付成功",
+        //         "order_code": "501709201100000047",
+        //         "pay_amount": 10,
+        //         "cinemaOrderCode": "",
+        //         "client_tel": "",
+        //         "print_code": "",
+        //         "verify_no": "884687752058",
+        //         "snacks": ["大可乐*1"]
+        //     }
+        // }
+
+    </script>
+    <script>
+        if (!options.data) {
+            options.data = {}
+        }
+        options.data.type = '2';
+
+    </script>
+    <script src="/dist/orderDetail/index.js"></script>
+</body>
+
+</html>

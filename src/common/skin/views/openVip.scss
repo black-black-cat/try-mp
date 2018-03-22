@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.m-views-openvip {
+    .tips {
+        color: #f99700;
+        background-color: #f9f1c3;
+    }
+}
+.m-openvip-type {
+    background-color: $c1;
+    >div {
+        color: $c6;
+        @include solid(2px $c2, bottom);
+    }
+    .check {
+        @include solid(2px $c3, all);
+
+        &.active {
+            @include solid(2px $c7, all);
+        }
+    }
+    .active{
+        background-color: $c7;
+    }
+}
+.m-openvip-content {
+    background: $c1;
+    >div:nth-child(n+2) {
+        @include solid(2px $c2, bottom);
+    }
+    .title{
+        @include solid(2px $c2, bottom);
+        color: $c6;
+    }
+    .name {
+        color: $c5;
+    }
+    input {
+        color: $c6;
+    }
+    ::-webkit-input-placeholder {
+        color: $c3;
+    }
+    .code {
+        color: $c7;
+        @include solid(2px $c7, all);
+
+        &.disabled {
+            color: $c3;
+            @include solid(2px $c3, all);
+        }
+    }
+    .check {
+        @include solid(2px $c7, all);
+    }
+    .condtion {
+        color: $c7;
+    }
+}
+.m-openvip-foot{
+    background: $c1;
+    span {
+        color: $c8;
+        &:nth-child(3) {
+            color: $c4;
+        }
+    }
+    .open {
+        color: $c1;
+        background-color: $c7;
+        box-shadow: 0px 0px 10px rgba(140, 161, 255, 0.5);
+    }
+
+}
+.m-openvip-header {
+    background-color: $c1;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.5);
+    .another {
+        @include solid(2px $c7, all);
+        color: $c7;
+    }
+    .layout-2 {
+        .item {
+            div:nth-child(2) {
+                color: $c6;
+            }
+            div:last-child{
+                color: $c4;
+            }
+        }
+    }
+    .layout-3 {
+        color: $c7;
+        background-color: #fafafa;
+    }
+    .arrow-right {
+        &:before,
+        &:after {
+            border-left-color: $c7;
+        }
+        &:after {
+            border-left-color: $c1;
+        }
+    }
+}
+.m-card-policy {
+    background-color: $c1;
+    .title {
+        color: $c6;
+        box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.1);
+    }
+}
+.m-card-policy {
+    .item1 {
+        color: $c6;
+        &:before {
+            background: $c7;
+        }
+    }
+    .item2 {
+        color: $c5;
+    }
+}

@@ -1,0 +1,47 @@
+.m-views-cinemas {
+    .arrow-down {
+        &:after {
+            border-top-color: $c1;
+        }
+    }
+    .m-header {
+        .header {
+            background-color: $c1;
+            @include box-shadow(0 2px 10px rgba($c4, 0.1));
+        }
+    }
+    .m-content {
+
+        .list {
+            background-color: $c1;
+        }
+
+        .error-wrapper {
+            background: $c2;
+        }
+    }
+    .m-cinema-item {
+        background-color: $c1;
+        @include solid(2px, $c2, bottom, false);
+        .row-1 {
+            .right {
+                color: $c8;
+                >.last {
+                    color: $c4;
+                }
+            }
+        }
+        .row-2 {
+            .left {
+                color: $c4;
+            }
+            .right {
+                color: $c4;
+            }
+        }
+        .feature-label {
+            @include solid(2px, $c7, all, false);
+            color: $c7;
+        }
+    }
+}

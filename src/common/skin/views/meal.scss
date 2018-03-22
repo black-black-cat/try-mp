@@ -1,0 +1,93 @@
+@charset 'utf-8';
+.m-views-meal {
+    .swiper-pagination-bullet {
+        background-color: rgba($c2, 0.8);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $c7;
+    }
+}
+
+.m-views-meal .content {
+    background: $c1;
+    .arrow-down {
+        &:before,
+        &:after {
+            border-left-color: $c3;
+        }
+        &:after {
+            border-left-color: $c1;
+        }
+    }
+    .address {
+        box-shadow: 0 0 10px rgba(153, 153, 153, 0.1);
+    }
+    .meal {
+        @include solid(2px, $c2, bottom);
+    }
+    .info {
+        div:nth-child(2) {
+            color: $c4;
+        }
+        div:nth-child(3) {
+            color: $c8;
+        }
+        .std-price {
+            color: $c3;
+        }
+    }
+    .add,
+    .reduce {
+        color: $c7;
+        @include solid(2px, $c7);
+    }
+    .count {
+        color: $c5;
+    }
+    .more {
+        background: $c2;
+        color: $c3;
+        .line {
+            @include solid(2px, $c13, bottom);
+        }
+    }
+    .add {
+        border-right-color: $c7;
+        border-bottom-color: $c7;
+    }
+    .reduce {
+        border-bottom-color: $c7;
+    }
+    .blank {
+        background: $c2;
+        >div:last-child {
+            color: $c4;
+        }
+    }
+}
+
+.m-views-meal .foot {
+    background: rgba(255, 255, 255, 0.95);
+    @include solid(2px, rgba($c0, 0.12), top, false);
+    .item1>div {
+        // border: 2px solid #bbbbbb;
+        @include solid(2px, $c3);
+        span {
+            color: $c3;
+        }
+    }
+    .item2 {
+        color: $c8;
+        .waitpay {
+            color: $c6;
+        }
+        .service {
+            color: $c4;
+        }
+        .payOrder {
+            background: $c7;
+            color: $c1;
+            box-shadow: 2px 2px 10px rgba($c7, 0.5);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// .m-views-bind-member-card,
+.m-bind-member-card-form {
+    background-color: $c2;
+    .writing {
+        background-color: $c1;
+        .row {
+            border-bottom-color: $c10;
+            &.row-4 {
+                color: $c7;
+            }
+            &.row-5 {
+                color: $c4;
+                background-color: $c2;
+            }
+        }
+        .btn-vcode {
+            border-color: $c7;
+            color: $c7;
+            &.disabled {
+                border-color: $c3;
+                color: $c3;
+            }
+        }
+    }
+    .footer {
+        background-color: $c1;
+        .btn-submit {
+            background-color: $c7;
+            color: $c1;
+            box-shadow: 0 r(8) r(12) r(-4) rgba($c7, 0.5);
+        }
+    }
+}

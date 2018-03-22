@@ -1,0 +1,267 @@
+/*
+* iphoneX 适配样式
+* 头部：44px
+* 底部：34px
+*/
+@charset "UTF-8";
+
+$iphoneX_top:88;
+$iphoneX_bottom:34;
+
+
+@mixin padding_b ($m:0, $pb:34){
+    padding-bottom: rem($m + $pb)!important;
+}
+@mixin padding_t ($m:0, $pt:88){
+    padding-top: rem($m + $pt)!important;
+}
+
+
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and
+(-webkit-device-pixel-ratio: 3) {
+    .iphoneX{
+        //首页 index_1：
+        .m-views-index{
+            .m-content{
+                @include padding_b(140);
+            }
+            .m-index-tab{
+                &.fixed-top{
+                    @include padding_t();
+                    height: rem(76 + $iphoneX_top)!important;
+                }
+            }
+        }
+
+        //首页index2
+        .m-views-index_2{
+            .tap-cinema{
+                top:rem($iphoneX_top)!important;
+            }
+            .m-index-tab{
+                &.fixed-top{
+                    @include padding_t();
+                    height: rem(76 + $iphoneX_top)!important;
+                }
+            }
+        }
+        //首页 index3
+        .m-views-index_3{
+            .tap-location{
+                top:rem($iphoneX_top)!important;
+            }
+            .fixed-top{
+                @include padding_t();
+                height:rem(76 + $iphoneX_top)!important;
+            }
+            .m-content{
+                @include padding_b(130);
+            }
+        }
+        //即将上映
+        .m-views-upcoming{
+            .m-upcoming-tab{
+                @include padding_t();
+                height:rem(76 + $iphoneX_top)!important;
+            }
+            .m-content{
+                @include padding_b(130);
+            }
+        }
+        //发现：
+        .m-views-find{
+            .nav{
+                @include padding_t();
+            }
+            .content{
+                 .swiper-slide{
+                    @include padding_b(120);
+                 }
+            }
+        }
+        //商城：
+        .m-views-meal{
+            >.meal{
+                @include padding_b(108);
+            }
+            .content_box{
+                @include padding_t();
+            }
+            .foot{
+                bottom: rem(98 + $iphoneX_bottom)!important;
+            }
+        }
+        //我的
+        .m-views-personal{
+            .cinema-group{
+                @include padding_t();
+            }
+            .m-content{
+                @include padding_b(121);
+            }
+        }
+        //影院列表
+        .m-views-cinemas{
+            @include padding_b();
+        }
+        //城市选择
+        .m-select-city{
+            @include padding_t();
+            &.selectCity{
+                @include padding_t(-$iphoneX_top);
+            }
+            .cities{
+               @include padding_b();
+            }
+        }
+        //选择影院
+        .m-select-cinema{
+            &.selectCinema{
+                @include padding_t();
+            }
+        }
+        //登录、注册
+        .m-login-views{
+            .m-title{
+                @include padding_t();
+                .icon-close_1,.to-reg{
+                    top:rem($iphoneX_top)!important;
+                }
+            }
+        }
+        //影讯详情
+        .m-views-info-detail{
+            .m-count{
+                @include padding_b();
+            }
+        }
+        //更多影讯
+        .m-views-relative-info{
+            .m-count{
+                @include padding_b();
+            }
+        }
+        //影片排期
+        .m-views-schedule{
+            @include padding_b();
+        }
+        //选座页面
+        .m-views-seats{
+            .margin-bottom {
+                margin-bottom: rem(260 + $iphoneX_bottom)!important;
+            }
+            .footer{
+                @include padding_b(18);
+            }
+        }
+        //卖品/影票订单
+        .m-views-order{
+            .distancetwo{
+                @include padding_b(150);
+            }
+            .layout-6{
+                >div{
+                    @include padding_b(20);
+                    .payOrder{
+                        bottom:rem(24 + $iphoneX_bottom)!important;
+                    }
+                }
+            }
+        }
+        //卖品弹出框
+        .m-order-meals{
+            @include padding_b();
+        }
+        //优惠券
+        .m-views-coupon{
+            .footer{
+                &.container{
+                    @include padding_b();
+                }
+            }
+        }
+        //优惠券帮助介绍
+        .m-views-coupon-instruction{
+            .container{
+                @include padding_b();
+            }
+        }
+        //影片详情
+        .m-views-movie{
+            .footer{
+                .console{
+                    @include padding_b(20);
+                }
+            }
+            .scrolling{
+                @include padding_b(150);
+            }
+        }
+        //影片评论
+        .review-form{
+            @include padding_b();
+        }
+        //会员卡充值
+        .m-views-viprecharge{
+            .m-viprecharge-foot{
+                @include padding_b();
+            }
+        }
+        //开通会员卡
+        .m-views-open-member-card{
+            .content{
+                @include padding_b();
+            }
+        }
+        //开卡支付页面
+        .m-views-openvip{
+            .m-openvip-foot{
+                @include padding_b();
+            }
+        }
+        //绑定会员卡页面
+        .m-views-bind-member-card,.m-views-unbind-member-card{
+            .footer{
+                @include padding_b();
+            }
+        }
+        //我的订单
+        .m-views-myorder{
+            .list{
+                @include padding_b();
+            }
+        }
+        //设置
+        .m-settings-view{
+            .m-settings-foot{
+                height:rem(98 + $iphoneX_bottom)!important;
+                .button{
+                    @include padding_b();
+                }
+            }
+        }
+        //关于
+        .m-aboutUs-view{
+            .m-aboutUs-foot{
+                bottom:rem(34 + $iphoneX_bottom)!important;
+            }
+        }
+        //查询明细
+        .m-views-inquire{
+            .list{
+                @include padding_b();
+            }
+        }
+        //底部菜单栏
+        .m-nav-items{
+            @include padding_b();
+        }
+    }
+    .iphoneX-browser {
+        //底部菜单栏
+        .m-nav-items{
+            @include padding_b();
+        }
+    }
+}

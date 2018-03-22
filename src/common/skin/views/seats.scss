@@ -1,0 +1,102 @@
+.m-views-seats {
+    .header {
+        background-color: $c1;
+        .arrow-right,
+        .arrow-left {
+            &:before,
+            &:after {
+                border-left-color: $c4;
+            }
+            &:after {
+                border-left-color: $c1;
+            }
+        }
+
+        .row-1 {
+            .center {
+                .center-row-1 {
+                    color: $c6;
+                }
+                .center-row-2 {
+                    color: $c7;
+                }
+            }
+        }
+
+        .row-2 {
+            color: $c4;
+        }
+    }
+    .seats-content {
+        background-color: $c2;
+
+        .screen {
+            color: $c1;
+            background-color: $c13;
+        }
+        .side-bar {
+            background-color: rgba(#777, .5);
+            color: $c1;
+        }
+        .seats-main {
+            .center-line {
+                border-color: $c13;
+            }
+            .seats-main-content {
+                .center-line {
+                    border-color: $c13;
+                }
+            }
+        }
+        .gold {
+            border: 1px dashed $c7;
+        }
+    }
+    .ad-container {
+        background-color: $c2;
+    }
+    .footer {
+        background-color: $c1;
+        .section-1 {
+            &.selected {
+                .item {
+                    >span {
+                        color: $c5;
+                    }
+                }
+            }
+            .content {
+                .item {
+                    color: $c4;
+                    @include solid(2px, $c3);
+                }
+                .item-wrapper {
+                    .circle {
+                        border-color: $c3;
+                        background-color: $c1;
+                    }
+                }
+            }
+        }
+        .section-2 {
+            .left {
+                color: $c4;
+                &.active {
+                    >span:nth-child(1) {
+                        color: $c8;
+                    }
+                }
+            }
+            .right {
+                .btn-submit {
+                    background-color: $c7;
+                    color: $c1;
+                    box-shadow: r(2) r(2) r(10) rgba($c7, 0.3), r(-2) 0 r(10) rgba($c7, 0.3);
+                    &.disabled {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

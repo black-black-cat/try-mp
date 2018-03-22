@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+.m-pay-result {
+    >div {
+        background: $c1;
+    }
+    .layout-1 {
+        >div:nth-child(1) {
+            color: $c7;
+        }
+        >div:nth-child(2) {
+            color: $c5;
+        }
+        >div:nth-child(3) {
+            color: $c4;
+        }
+        .fail {
+            color: #fc422d !important;
+        }
+        .tabs {
+            >div {
+                @include solid(2px, $c7, all);
+                color: $c7;
+            }
+        }
+        .backbtn {
+            div{
+                @include solid(2px, $c7, all);
+                color: $c7;
+            }
+        }
+    }
+    .layout-2 {
+        .tips {
+            color: $c4;
+        }
+        .meal {
+            @include solid(2px, $c2, bottom);
+        }
+        .info {
+            div:nth-child(3) {
+                color: $c8;
+            }
+        }
+        .shop {
+            @include solid(2px, $c7, all);
+            color: $c7;
+        }
+        .std-price {
+            color: $c3;
+        }
+    }
+    .layout-3 {
+        background: $c2;
+    }
+
+    .m-prize {
+        .prize-foot {
+            color: $c4 !important;
+        }
+    }
+}

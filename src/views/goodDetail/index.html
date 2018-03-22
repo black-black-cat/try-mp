@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="bkhMSWNDa2oWLC9xEnYKR1Z6YQsREj8FWAs.KzotHF82ACcnEBA9DQ==">
+    <title>卖品详情</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="/dist/core.dll.js"></script>
+    <script src="/dist/common/1/index.js"></script>
+</head>
+
+<body>
+
+
+    <div id="app"></div>
+    <script>
+        const order_status_map = {
+            "1": "未支付",
+            "4": "支付成功",
+            "7": "退款失败",
+        }
+        let order_status = "4"
+
+        const snack_status_map = {
+            "5": "失败"
+        }
+        let snack_status = "5"
+
+        const options = {
+            data: {
+                "cinema_name": "NG720（6677..）",
+
+                "order_status": order_status,
+                "order_status_name": order_status_map[order_status],
+
+                "snack_status": snack_status,
+                "snack_status_name": snack_status_map[snack_status],
+                "order_code": "501709201100000047",
+                "pay_amount": 10,
+                "cinemaOrderCode": "",
+                "client_tel": "15361050954",
+                "print_code": "",
+                "verify_no": "884687752058",
+                "snacks": ["大可乐*1"]
+            }
+        }
+
+    </script>
+    <script src="/dist/goodDetail/index.js"></script>
+</body>
+
+</html>

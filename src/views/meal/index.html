@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
+</head>
+<body>
+<div id="app">
+
+</div>
+<script src="/dist/common/index.js"></script>
+<script>
+    const options = {
+        bannerImage:[{"biz_admin_id":"","id":"2418","img":"http:\/\/172.16.10.130\/eshop\/adminapi\/web\/upload\/base\/2017\/09\/18\/59bf7ab12e8aa\/o.png","params":"{}","status":1,"title":"1","type":"normal","url":"http:\/\/php.sztest.mopon.cn\/dyh5\/web\/my\/index?cinema_code=66778833"},{"biz_admin_id":"","id":"2381","img":"http:\/\/172.16.10.130\/eshop\/adminapi\/web\/upload\/base\/2017\/09\/18\/59bf7a94c2781\/o.png","params":"","status":1,"title":"H5\u5356\u54c1\u9875\u9876\u90e8banner","type":"","url":""},{"biz_admin_id":"","id":"2377","img":"http:\/\/172.16.10.130\/eshop\/adminapi\/web\/upload\/base\/2017\/07\/24\/5975a60b5080c\/o.png","params":"","status":1,"title":"181","type":"","url":""}] ,
+        data:{
+            "snacks": [{"code":"6677883321001","connect_fee":2,"count":0,"image":"http:\/\/172.16.10.131:8082\/maipin2\/prod\/864318065125359616.jpg","name":"\u5927\u53ef\u4e50","net_price":10,"remark":"81g\u54c8\u6839\u8fbe\u65af1\u4e2a\u300146OZ\u7206\u7c73\u82b11\u6876\u300122OZ\u53ef\u4e50\/\u96ea\u78a7\/\u82ac\u8fbe1\u676f","settle_price":8,"status":"1","std_price":10,"submit_price":10},{"code":"6677883321003","connect_fee":0,"count":0,"image":"http:\/\/172.16.10.131:8082\/maipin2\/prod\/884981888727384064.jpg","name":"\u539f\u6765","net_price":0.01,"remark":"\u82b1\u751f","settle_price":0.01,"status":"1","std_price":10,"submit_price":10},{"code":"6677883321004","connect_fee":1,"count":0,"image":"http:\/\/172.16.10.131:8082\/maipin2\/prod\/870530147025944576.png","name":"\u53ef\u4e50\u676f\u88c5","net_price":6,"remark":"46oz\u7206\u7c73\u82b1+1\u74f6\u88c5\u53ef\u4e50\u6216\u679c\u7c92\u6a59","settle_price":5,"status":"1","std_price":10,"submit_price":10}],
+            "cinema_code": 66778833,
+            "bindMobile": 1,
+        },
+        href: {
+           apiLocksnack: '/dyh5/web/snack/locksnack',//预定卖品
+           urlOrderConfirm: '/dyh5/web/snack/confirm'//确认订单
+       },
+        bottomNavItems: [
+            '/dyh5/web/index/index?screening=1&cinema_code=66778833&area_code=110100', //首页(正在热映)
+            '/dyh5/web/discovery/list', //发现（影讯信息）
+            '/dyh5/web/snack/list?cinema_code=66778833',  //商城
+            '/dyh5/web/my/index?cinema_code=66778833',    //我的
+        ]
+    };
+</script>
+<script src="/dist/meal/index.js"></script>
+</body>
+</html>

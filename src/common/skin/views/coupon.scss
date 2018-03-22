@@ -1,0 +1,92 @@
+.m-views-coupon {
+    .header {
+        box-shadow: 0 r(4) r(12) 0 rgba($c0, 0.02);
+        background-color: $c1;
+        .row-1 {
+            @include solid(2px, $c10, bottom, false);
+            color: $c4;
+            .highlight {
+                color: $c8;
+            }
+        }
+
+        .search {
+            &-input {
+                @include solid(2px, $c13, all, false);
+
+                .clear {
+                    background-color: $c4;
+                    &:before,&:after {
+                        @include box-sizing(border-box);
+                        border-color: $c1;
+                    }
+                }
+            }
+
+            &-btn {
+                color: $c1;
+                background-color: $c7;
+                box-shadow: 0 r(4) r(12) 0 rgba($c7, 0.5);
+            }
+        }
+
+        .arrow-left {
+            &:before {
+                border-left-color: $c3;
+            }
+            &:after {
+                border-left-color: $c1;
+            }
+        }
+    }
+
+    .valid-form {
+        .input-wrapper {
+            @include solid(2px, $c10, all, false);
+        }
+    }
+
+    .footer {
+        background-color: $c1;
+        color: $c7;
+        .arrow-right {
+            &:before {
+                border-left-color: $c7;
+            }
+            &:after {
+                border-left-color: $c1;
+            }
+        }
+    }
+
+    .coupon-detail {
+        background-color: $c1;
+
+        .header {
+            box-shadow: 0 0 r(15) 0rem rgba($c0, 0.04);
+            .title {
+                color: $c6;
+            }
+        }
+
+        .body {
+            .section-1 {
+                @include solid(2px, $c10, bottom);
+                .part-left {
+                    .row-2, .row-3 {
+                        color: $c4;
+                    }
+                }
+                .part-right {
+                    @include solid(2px, $c10, left);
+                    color: $c8;
+                }
+            }
+            .section-2 {
+                .tip {
+                    color: $c4;
+                }
+            }
+        }
+    }
+}
