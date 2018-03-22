@@ -1,15 +1,15 @@
-global.webpackJsonp([1],{
+global.webpackJsonp([3],{
 
-/***/ 102:
+/***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_6d546a24_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_242c2354_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(193);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(183)
+  __webpack_require__(182)
 }
 var normalizeComponent = __webpack_require__(16)
 /* script */
@@ -19,17 +19,17 @@ var normalizeComponent = __webpack_require__(16)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-242c2354"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_6d546a24_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_242c2354_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src\\pages\\logs\\index.vue"
+Component.options.__file = "src\\pages\\index.o\\index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40,9 +40,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d546a24", Component.options)
+    hotAPI.createRecord("data-v-242c2354", Component.options)
   } else {
-    hotAPI.reload("data-v-6d546a24", Component.options)
+    hotAPI.reload("data-v-242c2354", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -54,61 +54,27 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 127:
+/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(100);
 
 
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index__["a" /* default */]);
 app.$mount();
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  config: {
-    navigationBarTitleText: '查看启动日志'
-  }
-});
-
 /***/ }),
 
-/***/ 128:
+/***/ 131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = formatTime;
-function formatNumber(n) {
-  var str = n.toString();
-  return str[1] ? str : '0' + str;
-}
-
-function formatTime(date) {
-  var year = date.getFullYear();
-  var month = date.getMonth() + 1;
-  var day = date.getDate();
-
-  var hour = date.getHours();
-  var minute = date.getMinutes();
-  var second = date.getSeconds();
-
-  var t1 = [year, month, day].map(formatNumber).join('/');
-  var t2 = [hour, minute, second].map(formatNumber).join(':');
-
-  return t1 + ' ' + t2;
-}
-
-/***/ }),
-
-/***/ 133:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_index__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_card__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_card__ = __webpack_require__(54);
 //
 //
 //
@@ -119,58 +85,179 @@ function formatTime(date) {
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  components: {
-    card: __WEBPACK_IMPORTED_MODULE_1__components_card__["a" /* default */]
-  },
-
   data: function data() {
     return {
-      logs: []
+      motto: 'Hello World',
+      userInfo: {}
     };
   },
+
+
+  components: {
+    card: __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]
+  },
+
+  methods: {
+    bindViewTap: function bindViewTap() {
+      var url = '/pages/logs/logs';
+      wx.navigateTo({ url: url });
+    },
+    getUserInfo: function getUserInfo() {
+      var _this = this;
+
+      // 调用登录接口
+      wx.login({
+        success: function success() {
+          wx.getUserInfo({
+            success: function success(res) {
+              _this.userInfo = res.userInfo;
+            }
+          });
+        }
+      });
+    },
+    clickHandle: function clickHandle(msg, ev) {
+      console.log('clickHandle:', msg, ev);
+    },
+    toCounter: function toCounter() {
+      var url = '/pages/counter/counter';
+      wx.navigateTo({ url: url });
+    }
+  },
+
   created: function created() {
-    var logs = wx.getStorageSync('logs') || [];
-    this.logs = logs.map(function (log) {
-      return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_index__["a" /* formatTime */])(new Date(log));
-    });
+    // 调用应用实例的方法获取全局数据
+    this.getUserInfo();
   }
 });
 
 /***/ }),
 
-/***/ 183:
+/***/ 182:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 194:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('ul', {
-    staticClass: "container log-list"
-  }, _vm._l((_vm.logs), function(log, index) {
-    return _c('li', {
-      key: index,
-      staticClass: "log-item",
-      class: {
-        red: _vm.aa
+  return _c('div', {
+    staticClass: "container",
+    attrs: {
+      "eventid": '4'
+    },
+    on: {
+      "click": function($event) {
+        _vm.clickHandle('test click', $event)
       }
-    }, [_c('card', {
-      attrs: {
-        "text": (index + 1) + ' . ' + log,
-        "mpcomid": '0-' + index
+    }
+  }, [_c('div', {
+    staticClass: "userinfo",
+    attrs: {
+      "eventid": '0'
+    },
+    on: {
+      "click": _vm.bindViewTap
+    }
+  }, [(_vm.userInfo.avatarUrl) ? _c('img', {
+    staticClass: "userinfo-avatar",
+    attrs: {
+      "src": _vm.userInfo.avatarUrl,
+      "background-size": "cover"
+    }
+  }) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "userinfo-nickname"
+  }, [_c('card', {
+    attrs: {
+      "text": _vm.userInfo.nickName,
+      "mpcomid": '0'
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "usermotto",
+    attrs: {
+      "eventid": '1'
+    },
+    on: {
+      "click": _vm.toCounter
+    }
+  }, [_c('div', {
+    staticClass: "user-motto"
+  }, [_c('card', {
+    attrs: {
+      "text": _vm.motto,
+      "mpcomid": '1'
+    }
+  })], 1)]), _vm._v(" "), _c('form', {
+    staticClass: "form-container"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.motto),
+      expression: "motto"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "v-model",
+      "eventid": '2'
+    },
+    domProps: {
+      "value": (_vm.motto)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.motto = $event.target.value
       }
-    })], 1)
-  }))], 1)
+    }
+  }), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model.lazy",
+      value: (_vm.motto),
+      expression: "motto",
+      modifiers: {
+        "lazy": true
+      }
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "v-model.lazy",
+      "eventid": '3'
+    },
+    domProps: {
+      "value": (_vm.motto)
+    },
+    on: {
+      "change": function($event) {
+        _vm.motto = $event.target.value
+      }
+    }
+  })])], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -179,7 +266,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6d546a24", esExports)
+     require("vue-hot-reload-api").rerender("data-v-242c2354", esExports)
   }
 }
 
@@ -287,5 +374,5 @@ if (false) {
 
 /***/ })
 
-},[127]);
-//# sourceMappingURL=logs.js.map
+},[125]);
+//# sourceMappingURL=index.o.js.map
