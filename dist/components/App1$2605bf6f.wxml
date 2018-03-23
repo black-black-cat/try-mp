@@ -1,0 +1,7 @@
+<template name="App1$2605bf6f">
+  <view class="_div data-v-13b7ccc2 container">
+    <navigator url="/pages/index.o/index.o" class="_a data-v-13b7ccc2 home">index.o</navigator>
+    <navigator url="/pages/logs/logs" class="_a data-v-13b7ccc2 home">logs</navigator>
+    <navigator url="/pages/counter/counter" class="_a data-v-13b7ccc2 home">counter</navigator>
+  </view>
+</template>

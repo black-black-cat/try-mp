@@ -6,7 +6,7 @@
       <button @click="decrement">-</button>
     </p>
 
-    <a href="/pages/index/index" class="home">去往首页</a>
+    <div class="home" @click="back">去往首页</div>
   </div>
 </template>
 
@@ -26,7 +26,24 @@ export default {
     },
     decrement () {
       store.commit('decrement')
+    },
+    back () {
+      wx.navigateBack()
     }
+  },
+  created () {
+
+  },
+
+  onLoad ()　{
+    console.log(this.$root.$mp)
+  },
+
+  onShow () {
+    this.$http.get('https://easy-mock.com/mock/5a4c3fee6b0cfc253a3f7e9d/example/count')
+      .then((res) => {
+        console.log(res)
+      })
   }
 }
 

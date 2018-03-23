@@ -1,20 +1,6 @@
-<import src="card$2b55e769" />
+<import src="App1$2605bf6f" />
 <template name="index$50f7067a">
-  <view class="_div data-v-0b316893 container" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
-    <view class="_div data-v-0b316893 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
-      <image class="_img data-v-0b316893 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <view class="_div data-v-0b316893 userinfo-nickname">
-        <template data="{{...$root[$kk+'0'], $root}}" is="card$2b55e769"></template>
-      </view>
-    </view>
-    <view class="_div data-v-0b316893 usermotto" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
-      <view class="_div data-v-0b316893 user-motto">
-        <template data="{{...$root[$kk+'1'], $root}}" is="card$2b55e769"></template>
-      </view>
-    </view>
-    <form class="_form data-v-0b316893 form-container">
-      <input type="text" class="_input data-v-0b316893 form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
-      <input type="text" class="_input data-v-0b316893 form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
-    </form>
+  <view class="_div data-v-0b316893 container">
+    <template wx:if="{{dataReady}}" data="{{...$root[$kk+'0'], $root}}" is="App1$2605bf6f"></template>
   </view>
 </template>

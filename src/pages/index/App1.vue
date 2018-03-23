@@ -1,29 +1,15 @@
 <template>
-  <div class="container" @click="clickHandle('test click', $event)">
-
-    <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <div class="userinfo-nickname">
-        <card :text="userInfo.nickName"></card>
-      </div>
-    </div>
-
-    <div class="usermotto" @click="toCounter">
-      <div class="user-motto">
-        <card :text="motto"></card>
-      </div>
-    </div>
-
-    <form class="form-container">
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-
+  <div class="container">
+    <a href="/pages/index.o/index.o" class="home">index.o</a>
+    <a href="/pages/logs/logs" class="home">logs</a>
+    <a href="/pages/counter/counter" class="home">counter</a>
+    <!-- <web-view src="http://app.omnijoi.cn/v4.0/" @message="onWebViewMsg"></web-view> -->
   </div>
 </template>
 
 <script>
 import card from '@/components/card'
+const log = console.log
 
 export default {
   data () {
@@ -60,24 +46,10 @@ export default {
     toCounter () {
       const url = '/pages/counter/counter'
       wx.navigateTo({ url })
+    },
+    onWebViewMsg () {
+      log(arguments)
     }
-  },
-
-  created () {
-    // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
-
-  },
-
-  onLoad () {
-    console.log(this.$root.$mp)
-  },
-
-  onShow () {
-    this.$http.get('https://easy-mock.com/mock/5a4c3fee6b0cfc253a3f7e9d/example/count')
-      .then((res) => {
-        console.log(res)
-      })
   }
 }
 </script>

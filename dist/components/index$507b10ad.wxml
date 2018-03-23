@@ -5,6 +5,6 @@
       <button bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-94251086">+</button>
       <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-94251086">-</button>
     </view>
-    <navigator url="/pages/index/index" class="_a data-v-94251086 home">去往首页</navigator>
+    <view class="_div data-v-94251086 home" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">去往首页</view>
   </view>
 </template>

@@ -1,5 +1,5 @@
 
-.userinfo.data-v-0b316893 {
+.userinfo.data-v-13b7ccc2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,19 +11,19 @@
   -ms-flex-align: center;
   align-items: center;
 }
-.userinfo-avatar.data-v-0b316893 {
+.userinfo-avatar.data-v-13b7ccc2 {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
-.userinfo-nickname.data-v-0b316893 {
+.userinfo-nickname.data-v-13b7ccc2 {
   color: #aaa;
 }
-.usermotto.data-v-0b316893 {
+.usermotto.data-v-13b7ccc2 {
   margin-top: 300rpx;
 }
-.form-control.data-v-0b316893 {
+.form-control.data-v-13b7ccc2 {
   display: block;
   padding: 0 24rpx;
   margin-bottom: 10rpx;

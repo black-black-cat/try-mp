@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './index.vue'
+import fly from 'common/utils/fly'
 // import Axios from 'common/utils/diyaxios'
-import axios from 'axios'
-import viewport from 'lib/comp/viewport'
+// import axios from 'axios'
+// import viewport from 'lib/comp/viewport'
 // import 'common/plugin/href'
 // import {index_proxy } from 'common/config'
 // import lazyImage from 'common/plugin/lazyImage'
@@ -26,10 +27,10 @@ import viewport from 'lib/comp/viewport'
 // Vue.use(versionUpdate);
 // Vue.use(selectCinema);
 
-viewport.init(1);
+// viewport.init(1);
 
 // Vue.config.productionTip = false;
-// Vue.prototype.$http = Axios;
+Vue.prototype.$http = fly
 // document.body.classList.add("m-views-index");
 // new Vue({
 //     el: "#app",
